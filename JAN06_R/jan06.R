@@ -39,7 +39,7 @@ hatch_hex =
       hexcode = matrix_image$hex[.x],
       hatch_lines(x = matrix_image$x[.x],
                   y = matrix_image$y[.x],
-                  width = 1, 
+                  width = 0.99, 
                   num_lines = matrix_image$num_lines[.x], 
                   type = matrix_image$type[.x])
       )
@@ -74,9 +74,9 @@ ggsave("jan06.png",
        plot = output,
        device = "png", 
        path = "~/repos/genuary2023/JAN06_R",
-       width = 10,
-       height = 13,
-       units = "in"
+       width = 400*10,
+       height = 527*10,
+       units = "px"
        )
 
 
