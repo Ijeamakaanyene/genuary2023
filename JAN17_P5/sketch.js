@@ -169,4 +169,10 @@ function createQuarterCircle(x, y, rectWidth, type) {
     }
   }
 
+  function keyPressed() {
+  if(key == "s") {
+    saveCanvas("jan17_" + seed, "png");
+  }
+}
+
 
