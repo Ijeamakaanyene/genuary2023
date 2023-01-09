@@ -60,6 +60,7 @@ function gridSetUp(width, height) {
 function setup() {
   gridSetUp(windowWidth, windowHeight);
   seed = random(0, 1)*99999;
+  //seed = 14314.538958258485;
   createCanvas(cWidth, cHeight);
   noLoop();
 }

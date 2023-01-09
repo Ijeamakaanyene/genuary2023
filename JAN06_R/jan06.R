@@ -17,7 +17,7 @@ matrix_image =
                 sat = c.2,
                 value = c.3) %>%
   dplyr::mutate(type = ntile(value, 3),
-                num_lines = ntile(value, 10))
+                num_lines = ntile(value, 8))
 
 square_hex = 
   purrr::map_dfr(
@@ -74,8 +74,8 @@ ggsave("jan06.png",
        plot = output,
        device = "png", 
        path = "~/repos/genuary2023/JAN06_R",
-       width = 400*10,
-       height = 527*10,
+       width = 400*9,
+       height = 527*9,
        units = "px"
        )
 
